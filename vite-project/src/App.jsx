@@ -2,28 +2,28 @@ import './App.css'
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white w-full">
       {/* Promotional Banner */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-3">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-3 w-full">
+        <div className="w-full px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-sm font-medium">Experience the next evolution of connection. <a href="#" className="underline hover:text-blue-200">Learn more about Meta's vision →</a></p>
         </div>
       </div>
       {/* Navigation Bar */}
-      <nav className="bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav className="bg-white border-b border-gray-200 w-full">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <img className="h-8 w-auto" src="/meta-logo.png" alt="Meta" />
+                <img className="h-4 w-auto" src="/meta-logo.svg" alt="Meta" />
               </div>
               <div className="hidden md:block ml-6 group">
                 <div className="flex space-x-8">
                   <div className="relative group/item">
                     <a href="#" className="text-gray-900 hover:text-gray-700 px-3 py-2 text-sm font-medium">Meta Quest</a>
-                    <div className="absolute hidden group-hover/item:block w-screen left-0 transform -translate-x-1/3 mt-2 bg-white border-t border-gray-200 shadow-lg">
-                      <div className="max-w-7xl mx-auto grid grid-cols-3 gap-8 p-8">
+                    <div className="absolute hidden group-hover/item:block w-screen -left-[50vw] right-[50vw] top-full z-50 bg-white border-t border-gray-200 shadow-lg">
+                      <div className="w-screen max-w-7xl mx-auto grid grid-cols-3 gap-8 p-8">
                         <div>
                           <h3 className="text-lg font-semibold mb-4">Latest Devices</h3>
                           <a href="#" className="block text-gray-600 hover:text-gray-900 mb-2">Meta Quest 3</a>
@@ -48,8 +48,8 @@ function App() {
                   </div>
                   <div className="relative group/item">
                     <a href="#" className="text-gray-900 hover:text-gray-700 px-3 py-2 text-sm font-medium">Ray-Ban Meta</a>
-                    <div className="absolute hidden group-hover/item:block w-screen left-0 transform -translate-x-1/2 mt-2 bg-white border-t border-gray-200 shadow-lg">
-                      <div className="max-w-7xl mx-auto grid grid-cols-3 gap-8 p-8">
+                    <div className="absolute hidden group-hover/item:block w-screen -left-[50vw] right-[50vw] top-full z-50 bg-white border-t border-gray-200 shadow-lg">
+                      <div className="w-screen max-w-7xl mx-auto grid grid-cols-3 gap-8 p-8">
                         <div>
                           <h3 className="text-lg font-semibold mb-4">Collections</h3>
                           <a href="#" className="block text-gray-600 hover:text-gray-900 mb-2">Wayfarer</a>
@@ -74,8 +74,8 @@ function App() {
                   </div>
                   <div className="relative group/item">
                     <a href="#" className="text-gray-900 hover:text-gray-700 px-3 py-2 text-sm font-medium">Apps and games</a>
-                    <div className="absolute hidden group-hover/item:block w-screen left-0 transform -translate-x-2/3 mt-2 bg-white border-t border-gray-200 shadow-lg">
-                      <div className="max-w-7xl mx-auto grid grid-cols-3 gap-8 p-8">
+                    <div className="absolute hidden group-hover/item:block w-screen -left-[50vw] right-[50vw] top-full z-50 bg-white border-t border-gray-200 shadow-lg">
+                      <div className="w-screen max-w-7xl mx-auto grid grid-cols-3 gap-8 p-8">
                         <div>
                           <h3 className="text-lg font-semibold mb-4">Categories</h3>
                           <a href="#" className="block text-gray-600 hover:text-gray-900 mb-2">Games</a>
@@ -116,12 +116,12 @@ function App() {
       </nav>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="w-full px-4 sm:px-6 lg:px-8 py-8">
         {/* Product Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Product Card 1 */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-            <img src="/quest-3.jpg" alt="Meta Quest 3" className="w-full h-48 object-cover" />
+            <img src="/quest-3.webp" alt="Meta Quest 3" className="w-full h-48 object-cover" />
             <div className="p-6">
               <h2 className="text-2xl font-bold mb-4">Meta Quest 3</h2>
               <p className="text-gray-600 mb-4">The most advanced all-in-one mixed reality device</p>
@@ -141,7 +141,7 @@ function App() {
           </div>
           {/* Product Card 3 */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-            <img src="/horizon.jpg" alt="Meta Horizon" className="w-full h-48 object-cover" />
+            <img src="/meta-verse.webp" alt="Meta Horizon" className="w-full h-48 object-cover" />
             <div className="p-6">
               <h2 className="text-2xl font-bold mb-4">Meta Horizon</h2>
               <p className="text-gray-600 mb-4">Your gateway to the metaverse</p>
